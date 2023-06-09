@@ -1,7 +1,8 @@
+const data = require("../data")
+
 const getData = async (req, res) => {
-    res.json({
-        "ProfesionnalName": "John Harisson",
-    })
+    res.header("Access-Control-Allow-Origin", "*")
+    res.json(data);
 }
 
 module.exports = { getData }

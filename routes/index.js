@@ -1,5 +1,6 @@
 const routes = require("express").Router();
-const myController = require("../controllers/index");
-routes.get("/profesionnal", myController.getData);
+const myController = require("../controllers/") //it redirects to index.js by default
 
-module.export = routes;
+routes.get("/professional", myController.getData);
+
+module.exports = routes
